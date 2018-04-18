@@ -1,4 +1,5 @@
 FROM golang:1.10.0
+# FROM alpine:3.7
 # FROM golang:1.10.0-alpine3.7
 # https://hub.docker.com/_/golang/
 
@@ -11,7 +12,8 @@ FROM golang:1.10.0
 # RUN go get -u gopkg.in/rwynn/monstache.v3
 #  This doesn't work for some reason
 
-COPY build-4.1.2/linux-amd64/monstache /go/bin/monstache
-# COPY build-4.1.2/linux-amd64/monstache /usr/local/go/bin/monstache
+# COPY build-4.4.0/linux-amd64/monstache /bin/monstache
+ADD build-4.4.0/linux-amd64/monstache /go/bin/monstache
+# COPY build-4.4.0/linux-amd64/monstache /usr/local/go/bin/monstache
 
-# TODO Maybe add an entrypoint to monstache binary with params later on
+ENTRYPOINT ["/go/bin/monstache"]

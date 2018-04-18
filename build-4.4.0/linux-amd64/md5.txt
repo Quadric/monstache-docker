@@ -1,0 +1,1 @@
+8c22826a6cd0ca95921a7446d808a43b  build/linux-amd64/monstache
