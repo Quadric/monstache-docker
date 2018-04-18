@@ -8,3 +8,4 @@ Versions are separated by branches
 |-------|--------|
 | v3.8.2 | https://github.com/Quadric/monstache-docker/tree/v3.8.2 |
 | v4.1.2 | https://github.com/Quadric/monstache-docker/tree/v4.1.2 |
+| v4.4.0 | https://github.com/Quadric/monstache-docker/tree/v4.4.0 |
